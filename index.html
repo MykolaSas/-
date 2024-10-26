@@ -1,10 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігровий магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #495057;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #343a40;
+            border-radius: 5px;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .game-card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .game-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
 <body>
-    <header>
-      <nav>
-        <div class="logo"></div>
-        <div class="menu"></div>
-        <div class="user-profile"></div>
-      </nav>
-    </header>
-  </body>
-  
+
+<header>
+    <h1>Ігровий магазин</h1>
+    <p>Купуйте найкращі ігри для ПК та консолей</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#new-arrivals">Новинки</a></li>
+        <li><a href="#top-games">Популярні ігри</a></li>
+        <li><a href="#contact">Контакти</a></li>
+    </ul>
+</nav>
+
+<div class="main-content">
+    <section id="new-arrivals">
+        <h2>Новинки</h2>
+        <div class="game-card">
+            <img src="game1.jpg" alt="Гра 1">
+            <h3>Назва Гри 1</h3>
+            <p>Ціна: 499 грн</p>
+            <p>Опис: Найновіша гра з неймовірним сюжетом та графікою.</p>
+            <button>Купити</button>
+        </div>
+        <div class="game-card">
+            <img src="game2.jpg" alt="Гра 2">
+            <h3>Назва Гри 2</h3>
+            <p>Ціна: 599 грн</p>
+            <p>Опис: Ця гра перенесе вас у фантастичний світ пригод.</p>
+            <button>Купити</button>
+        </div>
+    </section>
+
+    <section id="top-games">
+        <h2>Популярні ігри</h2>
+        <div class="game-card">
+            <img src="game3.jpg" alt="Гра 3">
+            <h3>Назва Гри 3</h3>
+            <p>Ціна: 399 грн</p>
+            <p>Опис: Захоплюючий екшн з відмінною механікою.</p>
+            <button>Купити</button>
+        </div>
+        <div class="game-card">
+            <img src="game4.jpg" alt="Гра 4">
+            <h3>Назва Гри 4</h3>
+            <p>Ціна: 299 грн</p>
+            <p>Опис: Легендарна стратегія, яку полюбили мільйони гравців.</p>
+            <button>Купити</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Зв'яжіться з нами: <a href="mailto:support@gameshop.com">support@gameshop.com</a></p>
+        <p>Телефон: +380 44 123 4567</p>
+        <p>Адреса: Київ, вул. Ігрова, 15</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Ігровий магазин. Всі права захищені.</p>
+</footer>
+
+</body>
+</html>
